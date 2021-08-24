@@ -1,0 +1,45 @@
+#Advanced Function design
+def myplot(playerlist):
+    Col = {"KobeBryant"="Black","JoeJohnson"="Red","LeBronJames"="Green","CarmeloAnthony"="Blue","DwightHoward"="Magenta","ChrisBosh"="Black","ChrisPaul"="Red","KevinDurant"="Green","DerrickRose"="Blue","DwayneWade"="Magenta"}
+    Mrk = {"KobeBryant"="s","JoeJohnson"="o","LeBronJames"="D","CarmeloAnthony"="^","DwightHoward"="o","ChrisBosh"="s","ChrisPaul"="^","KevinDurant"="D","DerrickRose"="o","DwayneWade"="^"}
+    for name in playerlist:
+        plt.plot(Games[Pdict[name]], c=Col[name] , ls='--' , marker=Mrk[name] ,ms=7, label=Players[Pdict[name]])
+    plt.legend(loc='upper left',bbox_to_anchor=(1,1)) # (1,1)(1,0)
+    plt.xticks(list(range(0,10)), Seasons , rotation='vertical')
+    plt.show()
+    myplot(["KobeBryant","JoeJohnson","LeBronJames"])
+    
+File "<ipython-input-11-5af978686db3>", line 3
+    Col = {"KobeBryant"="Black","JoeJohnson"="Red","LeBronJames"="Green","CarmeloAnthony"="Blue","DwightHoward"="Magenta","ChrisBosh"="Black","ChrisPaul"="Red","KevinDurant"="Green","DerrickRose"="Blue","DwayneWade"="Magenta"}
+                       ^
+SyntaxError: invalid syntax
+
+def myplot(playerlist):
+    Col = {"KobeBryant"="Black","JoeJohnson"="Red","LeBronJames"="Green","CarmeloAnthony"="Blue","DwightHoward"="Magenta","ChrisBosh"="Black","ChrisPaul"="Red","KevinDurant"="Green","DerrickRose"="Blue","DwayneWade"="Magenta"}
+    Mrk = {"KobeBryant"="s","JoeJohnson"="o","LeBronJames"="D","CarmeloAnthony"="^","DwightHoward"="o","ChrisBosh"="s","ChrisPaul"="^","KevinDurant"="D","DerrickRose"="o","DwayneWade"="^"}
+    for name in playerlist:
+        plt.plot(Games[Pdict[name]], c=Col[name] , ls='--' , marker=Mrk[name] ,ms=7, label=Players[Pdict[name]])
+    plt.legend(loc='upper left',bbox_to_anchor=(1,1)) # (1,1)(1,0)
+    plt.xticks(list(range(0,10)), Seasons , rotation='vertical')
+    plt.show()
+    myplot(["KobeBryant","JoeJohnson","LeBronJames"])
+    
+      File "<ipython-input-11-5af978686db3>", line 3
+    Col = {"KobeBryant"="Black","JoeJohnson"="Red","LeBronJames"="Green","CarmeloAnthony"="Blue","DwightHoward"="Magenta","ChrisBosh"="Black","ChrisPaul"="Red","KevinDurant"="Green","DerrickRose"="Blue","DwayneWade"="Magenta"}
+                       ^
+SyntaxError: invalid syntax
+
+
+myplot(Salary,["KobeBryant","JoeJohnson","LeBronJames"])
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-13-c0512f33cd64> in <module>
+----> 1 myplot(Salary,["KobeBryant","JoeJohnson","LeBronJames"])
+
+NameError: name 'myplot' is not defined
+
+
+
+
+
